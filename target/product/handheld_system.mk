@@ -86,4 +86,4 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.config.alarm_alert?=Alarm_Classic.ogg
 
 # Include vendor build hook
-$(call inherit-product-if-exists, vendor/proton/build/product.mk)
+$(call inherit-product-if-exists, vendor/proton/build/core/product.mk)
