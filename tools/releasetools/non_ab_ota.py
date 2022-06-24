@@ -210,6 +210,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   # Dump fingerprints
   script.Print("Target: {}".format(target_info.fingerprint))
+  
+  device = target_info.GetBuildProp("ro.zephyrus.device")
 
   device_specific.FullOTA_InstallBegin()
 
